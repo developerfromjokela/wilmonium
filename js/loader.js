@@ -12,5 +12,22 @@ if (document.getElementById("logout-form")) {
     script.setAttribute('src', chrome.extension.getURL('js/wilmonium.js'));
     wilmoniumDebug("Injecting "+chrome.extension.getURL('js/wilmonium.js'));
     document.body.appendChild(script);
+
+    var link = document.createElement('link');
+    link.href = chrome.extension.getURL('css/wilmonium-dark.css');
+    link.type = 'text/css';
+    link.rel = 'stylesheet';
+    link.media = 'all';
+    document.getElementsByTagName('HEAD')[0].appendChild(link);
 }
 
+/* Dark mode for iframes in the message pages */
+document.querySelectorAll('iframe').forEach(iframe => {
+    iframe.setAttribute('allowTransparency', 'true')
+    var style = document.createElement('style');
+    style.innerHTML =
+    `html,body {background-color: transparent !important; }
+    p,ul,li,b,strong,i,h1,h2,h3,h4,h5,blockquote {color: #bbb;}
+    a, a:link, a:visited {color: #3eb0ef !important;}`;
+    iframe.contentWindow.document.body.appendChild(style);
+});

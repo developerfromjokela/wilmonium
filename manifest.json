@@ -17,6 +17,7 @@
     }
   ],
   "web_accessible_resources": [
-    "js/wilmonium.js"
+    "js/wilmonium.js",
+    "css/wilmonium-dark.css"
   ]
 }
