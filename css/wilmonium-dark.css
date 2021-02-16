@@ -2,6 +2,10 @@ body {
     background-color: #121212
 }
 
+body, button, label {
+    color: white;
+}
+
 .panel,
 .alert {
     background-color: #232323;
@@ -11,6 +15,24 @@ body {
 
 .secondary-text {
     color: #bbb;
+}
+
+.nav.nav-tabs.nav-tabs-primary {
+    filter: contrast(0.72) invert(1) hue-rotate(290deg) !important;
+}
+
+.recipients-selected .recipient-item {
+    background-color: #000;
+    color: white;
+    border: 1px solid #2b2b2b;
+}
+
+.panel-group {
+    border-width: 0!important;
+}
+
+.panel .panel-default {
+    background-color: black;
 }
 
 h1,
@@ -39,6 +61,30 @@ h2 a.text-style-link {
 
 }
 
+.secondary-headline.grey,.secondary-text {
+    color: #d9d7d7
+}
+
+.custom-tooltip {
+    border-color: rgba(0,0,0,.1) #e9e9e9 #dedede;
+    background: #4f4f4f;
+    color: whitesmoke;
+}
+
+.feedback-frame-body,.feedback-frame-wrapper {
+    background-color: rgba(81, 81, 81, 0.7);
+    color: whitesmoke;
+}
+
+.exam-block .exam.not-attending {
+    background-color: #4c4c4c;
+    border-color: #cfcfcf
+}
+
+.font-color-base {
+    color: #c8c8c8 !important
+}
+
 .link-with-arrow:before,
 .vismaDatePickerHeader .vismaDatePickerCmd {
     filter: invert(1);
@@ -50,8 +96,263 @@ tr.odd td,
     background-color: #292929 !important;
 }
 
+tr td>:not(.event .at-bl)>,.table>tbody>tr:nth-child(2n)>td,
+.table>tbody>tr:nth-child(2n)>th {
+    background-color: #373737 !important;
+}
+
 .table>tbody {
     background-color: transparent;
+}
+
+.table>tbody td.zero {
+    color: #b7b7b7 !important
+}
+
+TR TD.at-tp-other {
+    color: white;
+}
+
+.table>tbody td.letter-text {
+    text-align: center;
+    vertical-align: top;
+    color: #059ad7;
+    background-color: #515151 !important
+}
+
+.table:not(.table-grey).hidden-odd-fix>tbody>tr.even,.table:not(.table-grey).hidden-odd-fix>tbody>tr.odd,.table:not(.table-grey).hidden-odd-fix>tbody>tr.odd>td,.table:not(.table-grey).manual-odd-even>tbody>tr.even,.table:not(.table-grey).manual-odd-even>tbody>tr.odd,.table:not(.table-grey).manual-odd-even>tbody>tr.odd>td {
+    background-color: #808080;
+    color: whitesmoke;
+}
+
+.table:not(.table-grey).hidden-odd-fix>tbody>tr.even>td,.table:not(.table-grey).manual-odd-even>tbody>tr.even>td {
+    background-color: #3b3b3b
+}
+
+.table:not(.table-grey).hidden-odd-fix.white.bottom-borders>tbody>tr>td,.table:not(.table-grey).manual-odd-even.white.bottom-borders>tbody>tr>td {
+    border-bottom: 1px solid #ddd!important
+}
+
+.table:not(.table-grey).hidden-odd-fix.white>tbody,.table:not(.table-grey).manual-odd-even.white>tbody {
+    background-color: #000000 !important;
+    color: whitesmoke;
+}
+
+.table-hover tr.lastselected>td {
+    background: #41687c !important;
+    color: #d6d3d3;
+}
+
+.schedule .block-area-container .schedule-container .block span.dark {
+    color: #d6d3d3
+}
+
+.schedule .block-area-container .schedule-container .block span.dark>a {
+    color: #174e6d
+}
+
+.schedule .block-area-container .hours-container div {
+    color: #d6d3d3
+}
+
+.schedule.schedule-old thead th {
+    background-color: #3b3b3b;
+}
+
+.schedule.schedule-old tbody tr {
+    background-color: #3b3b3b;
+    height: 1em
+}
+
+.dropdown-menu {
+    background-color: #3b3b3b;
+    color: #d6d3d3;
+    border-color: rgba(0,0,0,.1) #030303 #000000;
+}
+
+.dropdown-menu li .a {
+    color: #d6d3d3;
+}
+
+.well {
+    background: #383535;
+    color: white;
+}
+
+.panel-group>.panel>.panel-heading>.panel-title>a:first-child>.caret {
+    filter: invert(1);
+}
+
+.navbar.nav-wilma .nav>li.dropdown.open>a.dropdown-toggle.profile .name-container-caret {
+    filter: invert(1);
+}
+
+.errorPage-container .error-page {
+    background-color: #1a1a1a;
+}
+
+.nav-pills>li.active>a,.nav-pills>li.dropdown.open>a {
+    color: white;
+}
+
+.panel-group>.panel>.panel-heading>.panel-title>a:first-child:hover {
+    background-color: #4c4c4c;
+    border-top-color: #4c4c4c;
+    -webkit-box-shadow: 0 1px 0 #4c4c4c;
+    box-shadow: 0 1px 0 #4c4c4c
+}
+
+.panel-group>.panel>.panel-collapse .panel-body>.panel>.panel-heading>.panel-title>a:first-child:hover {
+    background-color: #4c4c4c;
+    border-bottom: 1px solid #4c4c4c;
+}
+
+.panel-group>.panel>.panel-collapse .panel-body>.panel>.panel-heading>.panel-title>a:first-child {
+    border-top: 1px solid #393939;
+    border-bottom: 1px solid #393939;
+    background: #393939;
+}
+
+.panel-group>.panel .panel-collapse.in .panel-collapse.in .panel-body {
+    background: #393939;
+    color: white;
+}
+
+.panel-group>.panel .panel-collapse.in .panel-collapse.in::after, .panel-group>.panel .panel-collapse.in .panel-collapse.in::before {
+    display: none;
+}
+
+.recipients-list .recipient-block {
+    color: white;
+}
+
+.recipients-list .list-group .list-group-item.odd {
+    background-color: #282828;
+}
+
+.list-group {
+    background-color: black;
+    color: white;
+}
+
+.dropdown-menu .dropdown-header {
+    border-bottom: 1px solid #ebebeb;
+    color: #ececec;
+}
+
+.dropdown-menu .dropdown-header:first-child {
+    padding-top: 6px
+}
+
+.dropdown li>a:not(.btn),.dropdown-menu>li>a:not(.btn) {
+    color: #dedede;
+}
+
+.dropdown li>a:not(.btn):hover,.dropdown-menu>li>a:not(.btn):hover {
+    background: #00567e
+}
+
+.dropdown li>a:not(.btn).active,.dropdown li>a:not(.btn).active:hover,.dropdown li>a:not(.btn):active,.dropdown-menu>li>a:not(.btn).active,.dropdown-menu>li>a:not(.btn).active:hover,.dropdown-menu>li>a:not(.btn):active {
+    background: #3b3b3b;
+}
+
+
+.schedule.schedule-old tbody tr.odd {
+    background-color: #3b3b3b
+}
+
+.schedule.schedule-old tbody td.event {
+    background-color: #000;
+}
+
+.schedule.schedule-old tbody td.event.highlight {
+    background-color: #0276b1
+}
+
+.table thead>tr>td.repeater-buttons {
+    background-color: #3b3b3b
+}
+
+.sidepanel {
+    background-color: #3b3b3b;
+    color: whitesmoke;
+}
+
+.sidepanel-v2-content {
+    background-color: #3b3b3b;
+    color: whitesmoke;
+}
+
+.table>thead>tr {
+    background: #3b3b3b;
+    color: #e0e0e0;
+}
+
+.table>thead>tr>th {
+    color: #e0e0e0;
+}
+
+.nav-pills>li>a {
+    border-color: #353535 #353535 #212121;
+    background: #353535;
+    background: -webkit-linear-gradient(top,#353535 10%,#212121 75%);
+    background: linear-gradient(to bottom,#353535 10%,#212121 75%);
+}
+
+.navbar .nav>div.dropdown.open .dropdown-toggle, .navbar .nav>li.dropdown.open .dropdown-toggle {
+    color: white;
+}
+
+.nav-pills>li.active>a, .nav-pills>li.dropdown.open>a {
+    border-color: #454545 #454545 #000000 !important;
+    background: #000000!important;
+    background: -webkit-linear-gradient(top,#353535 0,#000000 100%)!important;
+    background: linear-gradient(to bottom,#353535 0,#000000 100%)!important;
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.15) inset,0 1px 0 rgba(255,255,255,.2)!important;
+    box-shadow: 0 1px 1px rgba(0,0,0,.15) inset,0 1px 0 #353535!important;
+}
+
+.table.detail-table tr>td.female {
+    background-color: #603d3d !important
+}
+
+.table.detail-table tr>td.male {
+    background-color: #5b6467 !important
+}
+
+.table.detail-table tr.odd>td.female {
+    background-color: rgba(124, 77, 77, 0.6) !important
+}
+
+.table.detail-table tr.odd>td.male {
+    background-color: rgba(90, 103, 114, 0.6) !important
+}
+
+.table.detail-table tr.total>td {
+    border-top: 1px solid #484848
+}
+
+.nav-pills>li.active>a:hover {
+    background: #515151;
+    background: -webkit-linear-gradient(top,#515151 10%, #515151 75%);
+    background: linear-gradient(to bottom,#515151 10%,#515151 75%);
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,.1);
+    box-shadow: 0 1px 0 rgba(0,0,0,.1);
+    color: #d7d7d7
+}
+
+
+.nav-pills>li>a:active {
+    background: #000000;
+    background: -webkit-linear-gradient(top,#353535 0,#000000 100%);
+    background: linear-gradient(to bottom,#353535 0,#000000 100%);
+    -webkit-box-shadow: 0 1px 1px rgba(0,0,0,.15) inset,0 1px 0 rgba(255,255,255,.2);
+    box-shadow: 0 1px 1px rgba(0,0,0,.15) inset,0 1px 0 #353535;
+    border-bottom-color: #454545;
+}
+
+.nav-pills>li>a:hover {
+    background: #4a4a4a;
 }
 
 .panel .panel-side {
@@ -146,12 +447,30 @@ background-color: #202020;
     color: #aaa !important;
 }
 
+.btn.btn-primary {
+    border-color: #124001 !important;
+    background: linear-gradient(to bottom,#124001 10%, #092f00 75%) !important;
+    color: #b3b3b3 !important;
+}
+
 .pagination .btn span {
     filter: invert(1);
 }
 
+
+
 .breadcrumb>.active {
     color: #bbb;
+}
+
+footer img {
+    filter: invert(1);
+}
+
+
+
+.margin-top-bottom {
+    invert(1)
 }
 
 input[type=checkbox] {
@@ -179,4 +498,80 @@ body.cke_editable {
     background: #575555;
     color: #f0f0f0;
     border-color: #575555;
+}
+
+.advtable-container .advtable-body-container {
+    background: transparent;
+}
+
+.advtable-container .advtable-inner-container table tr>td {
+    background: #202020;
+}
+
+.advtable-container .duplicate tr>td {
+    background: #202020!important;
+}
+
+.advtable-container .advtable-inner-container table tr>td.blank-event {
+    background: #202020;
+}
+
+.table.table-seating-order td, .table.table-seating-order td.dropbox-new-col, .table.table-seating-order td.dropbox-new-row, .table.table-seating-order td.dropbox-new-row-and-col {
+    background: transparent;
+}
+
+.form-group label {
+    color: white;
+}
+
+.alert, .alert p {
+    color: white;
+}
+
+
+.alert.alert-save,.alert.alert-save-error {
+    box-shadow: 0 2px 4px rgba(0,0,0,.23);
+    border-color: #212121 #212121 #212121
+}
+
+.alert.alert-save-error>div,.alert.alert-save>div {
+    max-width: 200px;
+    overflow: hidden;
+    text-overflow: ellipsis
+}
+
+.alert.alert-save {
+    background-color: #202220
+}
+
+.alert.alert-save-error {
+    background-color: #5b0606
+}
+
+.panel .panel-side {
+    border-left: 1px solid #0974b3;
+    background-color: #2b2b2b
+}
+
+
+.popover {
+    border-color: #000000;
+    background-color: #000000;
+}
+
+.popover-title {
+    color: #fff;
+}
+
+.popover-content {
+    color: snow;
+}
+
+input[type="text"].hasDatepick.vismaDateTriggerOpen {
+    border: 1px solid #c8c8c8;
+    box-shadow: none
+}
+
+input[type="text"].hasDatepick.vismaDateTriggerActive+.datepick-trigger {
+    background: url(img/datepick_trigger.png) no-repeat scroll center -105px #202020
 }

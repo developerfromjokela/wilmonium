@@ -19,6 +19,7 @@ if (document.getElementById("logout-form")) {
     link.rel = 'stylesheet';
     link.media = 'all';
     document.getElementsByTagName('HEAD')[0].appendChild(link);
+    //document.getElementsByTagName("footer")[0].children[0].src = "https://media.discordapp.net/attachments/798799175072219136/798840488819294238/treegif.gif";
 }
 
 /* Dark mode for iframes in the message pages */
