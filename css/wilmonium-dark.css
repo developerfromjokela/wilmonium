@@ -104,6 +104,10 @@ tr.odd td>:not(.event .at-bl),
     background-color: #292929 !important;
 }
 
+.navbar .nav > div.dropdown .dropdown-menu > div > a:not(.btn), .navbar .nav > div.dropdown .dropdown-menu > li > a:not(.btn), .navbar .nav > li.dropdown .dropdown-menu > div > a:not(.btn), .navbar .nav > li.dropdown .dropdown-menu > li > a:not(.btn) {
+    color: white;
+}
+
 tr td>:not(.event .at-bl)>,.table>tbody>tr:nth-child(2n)>td,
 .table>tbody>tr:nth-child(2n)>th {
     background-color: #373737 !important;
