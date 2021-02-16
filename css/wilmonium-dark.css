@@ -575,3 +575,8 @@ input[type="text"].hasDatepick.vismaDateTriggerOpen {
 input[type="text"].hasDatepick.vismaDateTriggerActive+.datepick-trigger {
     background: url(img/datepick_trigger.png) no-repeat scroll center -105px #202020
 }
+
+.schedule-container div {
+    color: black;
+    filter: invert(1);
+}
