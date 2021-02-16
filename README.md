@@ -16,16 +16,16 @@ Currently the following pages are styled properly:
 - [x] /
 - [x] /messages
 - [x] /messages/xxx
-- [ ] /schedule
-- [ ] /choices
-- [ ] /exams/calendar
-- [ ] /exams/calendar/past
-- [ ] /attendance
-- [ ] /attendance/view
+- [x] /schedule
+- [x] /choices (HOPS text color is incorrect, everything else works)
+- [x] /exams/calendar
+- [x] /exams/calendar/past
+- [x] /attendance
+- [x] /attendance/view
 - [x] /decisions
 - [x] /printouts
-- [ ] /feedback 
+- [x] /feedback (not tested) 
 - [ ] ... other pages in the dropdown menu
-- [ ] dropdown and popup elements
+- [x] dropdown and popup elements
 
 I am also planning to add light/dark mode switch and reduce theme flickering on page change.
