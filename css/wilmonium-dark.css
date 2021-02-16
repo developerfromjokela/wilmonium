@@ -137,6 +137,7 @@ h2 {
 .form-control, .uneditable-input, input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=search], input[type=tel], input[type=color], input[type=text], textarea {
 background-color: #202020;
     border: 1px solid #181818;
+    color: white;
 }
 
 .btn.btn-default, .btn {
@@ -172,4 +173,10 @@ body.cke_editable {
 }
 .nav-tabs:not(.navbar-nav)+.tab-content {
     border-top: 3px solid #318CB4;
+}
+
+.badge.badge-disabled {
+    background: #575555;
+    color: #f0f0f0;
+    border-color: #575555;
 }
