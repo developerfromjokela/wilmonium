@@ -108,6 +108,10 @@ tr.odd td>:not(.event .at-bl),
     color: white;
 }
 
+.navbar .nav .dropdown.tabdrop.open .dropdown-toggle > .icon-align-justify, .navbar .nav .dropdown.tabdrop.open .dropdown-toggle > .icon-align-justify::after, .navbar .nav .dropdown.tabdrop.open .dropdown-toggle > .icon-align-justify::before {
+    background: white;
+}
+
 tr td>:not(.event .at-bl)>,.table>tbody>tr:nth-child(2n)>td,
 .table>tbody>tr:nth-child(2n)>th {
     background-color: #373737 !important;
