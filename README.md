@@ -1,5 +1,5 @@
 # Wilmonium
-Wilmonium, chrome extension for improving Wilma experience in your browser
+Wilmonium, Chrome & Firefox extension for improving Wilma experience in your browser
 
 ## Features
 
