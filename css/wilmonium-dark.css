@@ -98,8 +98,8 @@ h2 a.text-style-link {
     filter: invert(1);
 }
 
-tr.odd td,
-.table>tbody>tr:nth-child(2n+1)>td,
+tr.odd td>:not(.event .at-bl),
+.table>tbody>tr:nth-child(2n+1)>td:not(.event),
 .table>tbody>tr:nth-child(2n+1)>th {
     background-color: #292929 !important;
 }
