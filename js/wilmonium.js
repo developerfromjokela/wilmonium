@@ -20,6 +20,10 @@ function refreshSession() {
                 // Fuck, wilma logged itself out ¯\_(ツ)_/¯
                 wilmoniumDebug("Wilma logged out, refreshing...");
                 window.location.reload();
+            } else {
+                wilmoniumDebug("Setting AutoLogoutWarning.tMinusLogout to "+window.autoLogoutDelay);
+                // Preventing wilma's auto logout warning dialog from showing by resetting its counter to default value
+                window.AutoLogoutWarning.tMinusLogout = window.autoLogoutDelay;
             }
         })
     });
