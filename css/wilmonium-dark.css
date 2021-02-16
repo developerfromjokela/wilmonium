@@ -61,6 +61,14 @@ h2 a.text-style-link {
 
 }
 
+.table.table-condensed>tbody>tr>td, .table.table-condensed>tfoot>tr>td, .table.table-condensed>thead>tr>td {
+    background-color: black;
+}
+
+#choices-table .level1 TD {
+    background-color: #213840;
+}
+
 .secondary-headline.grey,.secondary-text {
     color: #d9d7d7
 }
@@ -565,6 +573,10 @@ body.cke_editable {
 
 .popover-content {
     color: snow;
+}
+
+#choices-tree {
+    background-color: black;
 }
 
 input[type="text"].hasDatepick.vismaDateTriggerOpen {
