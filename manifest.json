@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "Wilmonium",
+  "version": "1.0",
+  "author": "Developer From Jokela",
+  "description": "Wilmonium, chrome extension for improving Wilma experience in your browser",
+  "icons": {
+    "48": "icons/48.png"
+  },
+  "permissions": [
+    "tabs"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://*"],
+      "js": ["js/wilmonium.js"]
+    }
+  ]
+}
