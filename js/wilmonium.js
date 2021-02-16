@@ -17,7 +17,7 @@ function refreshSession() {
         response.json().then(res => {
             wilmoniumDebug(JSON.stringify(res));
             if (res.LoginResult) {
-                // Fuck, we slipped and wilma logged out
+                // Fuck, wilma logged itself out ¯\_(ツ)_/¯
                 wilmoniumDebug("Wilma logged out, refreshing...");
                 window.location.reload();
             }
