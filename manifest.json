@@ -12,7 +12,7 @@
   ],
   "content_scripts": [
     {
-      "matches": ["*://*"],
+      "matches": ["<all_urls>"],
       "js": ["js/wilmonium.js"]
     }
   ]
