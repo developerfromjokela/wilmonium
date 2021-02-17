@@ -600,3 +600,7 @@ input[type="text"].hasDatepick.vismaDateTriggerActive+.datepick-trigger {
     color: black;
     filter: invert(1);
 }
+
+.toggle-slot {
+    box-shadow: none !important;
+}
