@@ -108,6 +108,14 @@ tr.odd td>:not(.event .at-bl),
     background-color: #3c3c3c !important;
 }
 
+td.odd {
+    background-color: #3c3c3c !important;
+}
+
+.odd {
+    background-color: #3c3c3c !important;
+}
+
 .navbar .nav > div.dropdown .dropdown-menu > div > a:not(.btn), .navbar .nav > div.dropdown .dropdown-menu > li > a:not(.btn), .navbar .nav > li.dropdown .dropdown-menu > div > a:not(.btn), .navbar .nav > li.dropdown .dropdown-menu > li > a:not(.btn) {
     color: white;
 }
@@ -486,9 +494,18 @@ background-color: #202020;
 }
 
 input.btn.btn-primary {
-    border-color: #124001 !important;
-    background: linear-gradient(to bottom,#124001 10%, #092f00 75%) !important;
+    border-color: #1c5b03 !important;
+    background: linear-gradient(to bottom,#1c5b03 10%, #0b4800 75%) !important;
     color: #fcfcfc !important;
+}
+
+.recipients-list .recipient-block.active {
+    background-color: #003562;
+    border-color: #003562
+}
+
+.recipients-list .recipient-block:not(.disabled):not(.active):hover {
+    background-color: #003562
 }
 
 .tooltip.top .tooltip-arrow {
