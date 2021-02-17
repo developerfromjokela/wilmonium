@@ -13,7 +13,7 @@
   .toggle-slot {
     right: 10em;
     bottom: 10em;
-    position: absolute;
+    position: fixed;
     height: 10em;
     width: 20em;
     zoom: 0.2;
