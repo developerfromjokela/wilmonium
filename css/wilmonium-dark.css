@@ -104,6 +104,10 @@ tr.odd td>:not(.event .at-bl),
     background-color: #292929 !important;
 }
 
+.table tbody {
+    background-color: #3c3c3c !important;
+}
+
 .navbar .nav > div.dropdown .dropdown-menu > div > a:not(.btn), .navbar .nav > div.dropdown .dropdown-menu > li > a:not(.btn), .navbar .nav > li.dropdown .dropdown-menu > div > a:not(.btn), .navbar .nav > li.dropdown .dropdown-menu > li > a:not(.btn) {
     color: white;
 }
@@ -457,16 +461,43 @@ background-color: #202020;
     color: white;
 }
 
-.btn.btn-default, .btn {
+.btn.btn-default, .btn>:not(input[type='checkbox']) {
     border-color: #333333 !important;
     background: linear-gradient(to bottom,#212121 10%,#1e1e1e 75%) !important;
     color: #aaa !important;
 }
 
-.btn.btn-primary {
+.tooltip.bottom, .tooltip.left, .tooltip.right, .tooltip.top {
+    border-color: #fff;
+    background-color: black;
+    color: white;
+}
+
+.btn-group.btn-group-checkbox .btn.btn-primary.active.focus:not(.left):not(.right), .btn-group.btn-group-checkbox .btn.btn-primary:not(.left):not(.right), .btn-group.btn-group-checkbox .btn.btn-primary:not(.left):not(.right):hover, .btn-group.btn-group-radio .btn.btn-primary.active.focus:not(.left):not(.right), .btn-group.btn-group-radio .btn.btn-primary:not(.left):not(.right), .btn-group.btn-group-radio .btn.btn-primary:not(.left):not(.right):hover,.btn-group.btn-group-checkbox .btn.btn-primary.active:not(.left):not(.right), .btn-group.btn-group-checkbox .btn.btn-primary.active:not(.left):not(.right):hover, .btn-group.btn-group-radio .btn.btn-primary.active:not(.left):not(.right), .btn-group.btn-group-radio .btn.btn-primary.active:not(.left):not(.right):hover {
+    color: white;
+}
+
+.btn-group.btn-group-checkbox .btn.btn-primary.active.focus:not(.left):not(.right), .btn-group.btn-group-checkbox .btn.btn-primary.active.focus:not(.left):not(.right):hover, .btn-group.btn-group-radio .btn.btn-primary.active.focus:not(.left):not(.right), .btn-group.btn-group-radio .btn.btn-primary.active.focus:not(.left):not(.right):hover {
+    color: white;
+}
+
+.tooltip-inner {
+    color: white;
+}
+
+input.btn.btn-primary {
     border-color: #124001 !important;
     background: linear-gradient(to bottom,#124001 10%, #092f00 75%) !important;
-    color: #b3b3b3 !important;
+    color: #fcfcfc !important;
+}
+
+.tooltip.top .tooltip-arrow {
+    border-top-color: #fff;
+
+}
+
+.tooltip.top .tooltip-arrow:after {
+    border-top-color: #000;
 }
 
 .pagination .btn span {

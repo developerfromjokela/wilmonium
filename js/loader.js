@@ -44,6 +44,9 @@ if (document.getElementById("logout-form")) {
     wilmoniumDebug("Injecting "+chrome.extension.getURL('js/wilmonium.js'));
     document.body.appendChild(script);
 
+    if (localStorage.getItem("wilmonium") == null) {
+        localStorage.setItem("wilmonium", JSON.stringify({darkmode: false}));
+    }
     let darkmode = JSON.parse(localStorage.getItem('wilmonium')).darkmode;
 
     if (darkmode) addStyles('css/wilmonium-dark.css', 'darkmode-css');
