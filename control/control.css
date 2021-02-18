@@ -3,8 +3,8 @@
 }*/
 
 body {
-  height: 50px;
-  width: 100px;
+  height: 20px;
+  width: 50px;
 }
   
   .toggle-checkbox {
@@ -16,8 +16,7 @@ body {
   }
   
   .toggle-slot {
-    right: 10em;
-    bottom: 10em;
+    bottom: 25px;
     position: fixed;
     height: 10em;
     width: 20em;
