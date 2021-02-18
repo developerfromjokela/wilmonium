@@ -652,6 +652,10 @@ input.btn.btn-primary {
     border-top-color: #000;
 }
 
+.popover.bottom>.arrow, .popover.bottom>.arrow:after {
+    border-bottom-color: black;
+}
+
 .pagination .btn span {
     filter: invert(1);
 }
