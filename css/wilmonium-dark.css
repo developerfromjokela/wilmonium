@@ -649,12 +649,6 @@ input.btn.btn-primary {
     color: #fcfcfc !important;
 }
 
-.btn.btn-primary {
-    border-color: #1c5b03 !important;
-    background: linear-gradient(to bottom,#1c5b03 10%, #0b4800 75%) !important;
-    color: #fcfcfc !important;
-}
-
 .recipients-list .recipient-block.active {
     background-color: #003562;
     border-color: #003562
