@@ -43,7 +43,9 @@ const iframePatch = () => {
         var style = document.createElement('style');
         style.innerHTML =
             `html,body {background-color: transparent !important; }
-    p,ul,li,b,strong,i,h1,h2,h3,h4,h5,blockquote {color: #bbb;}
+    p,ul,li,b,strong,i,h1,h2,h3,h4,h5,blockquote,body:not(.wilma) {color: #bbb;}
+    .m-replybox, form.quickreply {background-color: transparent !important;}
+    .m-replybox:after,.m-replybox:before, form.quickreply:before,form.quickreply:after {border-color: transparent !important;}
     a, a:link, a:visited {color: #3eb0ef !important;}`;
         iframe.contentWindow.document.body.appendChild(style);
     });

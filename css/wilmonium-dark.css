@@ -51,6 +51,11 @@ li.palkki > a[title],  li > a[title]:not([aria-label]) {
     filter: invert(1);
 }
 
+form.quickreply:before,form.quickreply:after {border-color: transparent !important;}
+form.quickreply {
+    background-color: black;
+}
+
 /* a link selector hell */
 .panel a,
 a.semi-bold-link,
