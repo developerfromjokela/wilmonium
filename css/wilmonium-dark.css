@@ -36,8 +36,16 @@ body, button, label {
 }
 
 h1,
-.datepick-month-year {
+.datepic.vismaiconk-month-year {
     color: #fefefe;
+}
+
+li.palkki > a {
+    filter: invert(1);
+}
+
+a[title] {
+    filter: invert(1);
 }
 
 /* a link selector hell */
@@ -106,6 +114,67 @@ tr.odd td>:not(.event .at-bl),
 
 .table tbody {
     background-color: #3c3c3c !important;
+}
+
+.selection-body .list-group .list-group-item.selected>a {
+    background-color: #3b3b3b;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+}
+
+.selection-body .list-group .list-group-item:hover>a {
+    background-color: #1a1a1a;
+}
+
+.selection-body {
+    background-color: #000;
+    color: white;
+}
+
+.selection-body .selection-header {
+    background: #424242;
+    color: white;
+}
+
+.selection-body .error-bubble, .selection-body .window-box {
+    background-color: #000;
+    color: white;
+    border-style: none;
+}
+
+.selection-body .timetable {
+    background-color: #474747;
+}
+
+.selection-body .timetable .day {
+    background-color: #474747;
+}
+
+.modal-header {
+    background: #474747;
+    color: white;
+    border: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.modal-content {
+    background-color: black;
+    color: white;
+}
+
+.modal-title {
+    color: white;
+}
+
+button.close span, button.close:hover span {
+    filter: invert(1);
+}
+
+body.selection-body > .panel {
+    background: #1e1e1e;
+    color: white;
+    border: 1px solid #000;
 }
 
 td.odd {
