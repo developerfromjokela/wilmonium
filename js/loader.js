@@ -36,6 +36,19 @@ NodeList.prototype.remove = HTMLCollection.prototype.remove = function() {
     }
 }
 
+const iframePatch = () => {
+    /* Dark mode for iframes in the message pages */
+    document.querySelectorAll('iframe').forEach(iframe => {
+        iframe.setAttribute('allowTransparency', 'true')
+        var style = document.createElement('style');
+        style.innerHTML =
+            `html,body {background-color: transparent !important; }
+    p,ul,li,b,strong,i,h1,h2,h3,h4,h5,blockquote {color: #bbb;}
+    a, a:link, a:visited {color: #3eb0ef !important;}`;
+        iframe.contentWindow.document.body.appendChild(style);
+    });
+};
+
 try {
     let navDetect = document.getElementsByClassName("nav-wilma").length > 0;
     let selectionDetect = document.getElementsByClassName("selection-body").length > 0;
@@ -52,7 +65,11 @@ try {
         }
         let darkmode = JSON.parse(localStorage.getItem('wilmonium')).darkmode;
 
-        if (darkmode) addStyles('css/wilmonium-dark.css', 'darkmode-css');
+        if (darkmode) {
+            addStyles('css/wilmonium-dark.css', 'darkmode-css');
+            iframePatch();
+        }
+
 
 
         /* Toggle switch */
@@ -76,28 +93,23 @@ try {
             let darkmode = evt.target.checked;
             wilmoniumDebug('Dark mode ' + darkmode)
             if (!darkmode) {
+                document.querySelectorAll('iframe').forEach(iframe => {
+                    iframe.setAttribute('allowTransparency', 'false');
+                    console.log(iframe.contentDocument);
+                    iframe.contentDocument.getElementsByTagName("style")[0].remove();
+                });
                 document.querySelectorAll('#darkmode-css').forEach(el => {
                     el.remove();
                 })
 
             } else {
                 addStyles('css/wilmonium-dark.css', 'darkmode-css');
+                iframePatch();
             }
             localStorage.setItem('wilmonium', JSON.stringify({darkmode: darkmode}));
         }
         //document.getElementsByTagName("footer")[0].children[0].src = "https://media.discordapp.net/attachments/798799175072219136/798840488819294238/treegif.gif";
     }
-    /* Dark mode for iframes in the message pages */
-    document.querySelectorAll('iframe').forEach(iframe => {
-        iframe.setAttribute('allowTransparency', 'true')
-        var style = document.createElement('style');
-        style.innerHTML =
-            `html,body {background-color: transparent !important; }
-    p,ul,li,b,strong,i,h1,h2,h3,h4,h5,blockquote {color: #bbb;}
-    a, a:link, a:visited {color: #3eb0ef !important;}`;
-        iframe.contentWindow.document.body.appendChild(style);
-    });
-
 } catch (e) {
     wilmoniumDebug(e);
 }
