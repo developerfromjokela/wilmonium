@@ -39,7 +39,7 @@ body, button, label {
     filter: invert(1);
 }
 
-.selection-body > a[title] {
+li.palkki > a[title] {
     filter: invert(1);
 }
 
@@ -717,7 +717,7 @@ input[type="text"].hasDatepick.vismaDateTriggerActive+.datepick-trigger {
     background: url(img/datepick_trigger.png) no-repeat scroll center -105px #202020
 }
 
-.selection-body > .schedule-container div {
+.schedule-container div {
     color: black;
     filter: invert(1);
 }
