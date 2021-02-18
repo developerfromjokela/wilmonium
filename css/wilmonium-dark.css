@@ -107,7 +107,7 @@ form.quickreply {
 }
 
 /* a link selector hell */
-.panel a,
+.panel a:not(.btn),
 a.semi-bold-link,
 a.link-with-arrow,
 a.icon-link span,
@@ -346,6 +346,10 @@ TR TD.at-tp-other {
     filter: invert(1);
 }
 
+nav > div.pull-right:not(.dropdown), a[title="YubiKey"] {
+    filter: invert(1);
+}
+
 .navbar.nav-wilma .nav>li.dropdown.open>a.dropdown-toggle.profile .name-container-caret {
     filter: invert(1);
 }
@@ -353,6 +357,17 @@ TR TD.at-tp-other {
 .errorPage-container .error-page {
     background-color: #1a1a1a;
 }
+
+.login-page {
+    background: black;
+}
+
+.login-box .login-header, .login-box .login-content, .login-box .login-footer {
+    background-color: #292929;
+    color: white;
+}
+
+
 
 .nav-pills>li.active>a,.nav-pills>li.dropdown.open>a {
     color: white;
@@ -604,7 +619,7 @@ h2 {
     color: white;
 }
 
-.btn.btn-default, .btn>:not(input[type='checkbox']) {
+.btn.btn-default, .btn:not(.btn.btn-primary)>:not(input[type='checkbox']) {
     border-color: #333333 !important;
     background: linear-gradient(to bottom,#212121 10%,#1e1e1e 75%) !important;
     color: #aaa !important;
@@ -629,6 +644,12 @@ h2 {
 }
 
 input.btn.btn-primary {
+    border-color: #1c5b03 !important;
+    background: linear-gradient(to bottom,#1c5b03 10%, #0b4800 75%) !important;
+    color: #fcfcfc !important;
+}
+
+.btn.btn-primary {
     border-color: #1c5b03 !important;
     background: linear-gradient(to bottom,#1c5b03 10%, #0b4800 75%) !important;
     color: #fcfcfc !important;
@@ -672,9 +693,10 @@ footer img {
 
 
 
-.margin-top-bottom {
-invert(1)
+.login-box .login-footer .logo-footer {
+    filter: invert(1);
 }
+
 
 input[type=checkbox] {
     filter: contrast(0.8) invert(1) hue-rotate(
