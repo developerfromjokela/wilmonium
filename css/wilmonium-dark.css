@@ -36,16 +36,8 @@ body, button, label {
 }
 
 h1,
-.datepic.vismaiconk-month-year {
+.datepick-month-year {
     color: #fefefe;
-}
-
-li.palkki > a {
-    filter: invert(1);
-}
-
-a[title] {
-    filter: invert(1);
 }
 
 /* a link selector hell */
@@ -114,67 +106,6 @@ tr.odd td>:not(.event .at-bl),
 
 .table tbody {
     background-color: #3c3c3c !important;
-}
-
-.selection-body .list-group .list-group-item.selected>a {
-    background-color: #3b3b3b;
-    box-shadow: none;
-    -webkit-box-shadow: none;
-}
-
-.selection-body .list-group .list-group-item:hover>a {
-    background-color: #1a1a1a;
-}
-
-.selection-body {
-    background-color: #000;
-    color: white;
-}
-
-.selection-body .selection-header {
-    background: #424242;
-    color: white;
-}
-
-.selection-body .error-bubble, .selection-body .window-box {
-    background-color: #000;
-    color: white;
-    border-style: none;
-}
-
-.selection-body .timetable {
-    background-color: #474747;
-}
-
-.selection-body .timetable .day {
-    background-color: #474747;
-}
-
-.modal-header {
-    background: #474747;
-    color: white;
-    border: 0;
-    -webkit-box-shadow: none;
-    box-shadow: none;
-}
-
-.modal-content {
-    background-color: black;
-    color: white;
-}
-
-.modal-title {
-    color: white;
-}
-
-button.close span, button.close:hover span {
-    filter: invert(1);
-}
-
-body.selection-body > .panel {
-    background: #1e1e1e;
-    color: white;
-    border: 1px solid #000;
 }
 
 td.odd {
@@ -533,7 +464,7 @@ h2 {
 }
 
 .form-control, .uneditable-input, input[type=password], input[type=datetime], input[type=datetime-local], input[type=date], input[type=month], input[type=time], input[type=week], input[type=number], input[type=email], input[type=url], input[type=search], input[type=tel], input[type=color], input[type=text], textarea {
-background-color: #202020;
+    background-color: #202020;
     border: 1px solid #181818;
     color: white;
 }
@@ -603,21 +534,21 @@ footer img {
 
 
 .margin-top-bottom {
-    invert(1)
+invert(1)
 }
 
 input[type=checkbox] {
-      filter: contrast(0.8) invert(1) hue-rotate(
-165deg
-);
+    filter: contrast(0.8) invert(1) hue-rotate(
+            165deg
+    );
 }
 
 body.cke_editable {
-  background-color: transparent;
+    background-color: transparent;
 }
 
 .proptable {
-  border: 1px solid #131313;
+    border: 1px solid #131313;
 }
 
 .proptable>tbody>tr>td, .proptable>tbody>tr>th, .proptable>tfoot>tr>td, .proptable>tfoot>tr>th, .proptable>thead>tr>td, .proptable>thead>tr>th {
