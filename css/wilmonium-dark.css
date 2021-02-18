@@ -39,7 +39,15 @@ body, button, label {
     filter: invert(1);
 }
 
-li.palkki > a[title] {
+.datepick-popup, .date-inline {
+    background: black;
+}
+
+.vismaDatePickerFooter a.vismaDatePickerCmd-clear {
+    color: white;
+}
+
+li.palkki > a[title],  li > a[title]:not([aria-label]) {
     filter: invert(1);
 }
 
@@ -105,10 +113,14 @@ table.vismaDatePickerCalendar th span, table.vismaDatePickerCalendar td span, ta
     filter: invert(1);
 }
 
-tr.odd td>:not(.event .at-bl),
+tr.odd td>:not(.event .at-bl):not(sup):not(small),
 .table>tbody>tr:nth-child(2n+1)>td:not(.event),
 .table>tbody>tr:nth-child(2n+1)>th {
     background-color: #292929 !important;
+}
+
+td.event {
+    border-left: 0;
 }
 
 .table tbody {
