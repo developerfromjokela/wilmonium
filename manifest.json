@@ -8,6 +8,18 @@
     "48": "icons/48.png",
     "128": "icons/128.png"
   },
+  "browser_action": {
+    "default_icon": {
+      "48": "icons/48.png",
+      "128": "icons/128.png"
+    },
+    "default_title": "Wilmonium",
+    "default_popup": "control/control.html"
+  },
+  "permissions": [
+    "storage",
+    "tabs"
+  ],
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
