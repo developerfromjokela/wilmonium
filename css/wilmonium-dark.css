@@ -47,6 +47,56 @@ body, button, label {
     color: white;
 }
 
+.navbar .nav .dropdown.tabdrop.open .dropdown-toggle:hover {
+    background: #6e6e6e
+}
+
+.navbar .nav>div.dropdown .dropdown-menu>div>a:not(.btn):hover,.navbar .nav>div.dropdown .dropdown-menu>li>a:not(.btn):hover,.navbar .nav>li.dropdown .dropdown-menu>div>a:not(.btn):hover,.navbar .nav>li.dropdown .dropdown-menu>li>a:not(.btn):hover {
+    background-color: #6e6e6e
+}
+
+.navbar.navbar-second-level .third-level.dropdown-menu .third-level-item>a:hover {
+    background-color: #6e6e6e
+}
+
+.navbar .nav .dropdown.tabdrop.open .dropdown-toggle:hover {
+    background: #6e6e6e
+}
+
+.navbar .nav div.second-level-item.hoverState>a:not(.dropdown-toggle),.navbar .nav li.second-level-item.hoverState>a:not(.dropdown-toggle) {
+    background: #6e6e6e;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar .nav .third-level.third-level-collapse>.third-level-item>a:hover {
+    background: #6e6e6e!important;
+    text-decoration: none;
+    color: white;
+    -webkit-box-shadow: 0 -1px 0 #6e6e6e 0 -1px 0 #6e6e6e;
+    box-shadow: 0 -1px 0 #6e6e6e 0 -1px 0 #6e6e6e
+}
+
+.nav-tabs:not(.navbar-nav)>li.tabdrop .dropdown-menu>li>a.pressed,.nav-tabs:not(.navbar-nav)>li.tabdrop .dropdown-menu>li>a:active,.nav-tabs:not(.navbar-nav)>li.tabdrop .dropdown-menu>li>a:focus {
+    background: #6e6e6e;
+    -webkit-box-shadow: 0 1px 0 #6e6e6e inset,0 -1px 0 #6e6e6e inset;
+    box-shadow: 0 1px 0 #6e6e6e inset,0 -1px 0 #6e6e6e inset
+}
+
+.nav-tabs:not(.navbar-nav)>li.tabdrop .dropdown-menu>li>a:hover {
+    border: 0;
+    background: #6e6e6e;
+    color: white;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.navbar .navbar-brand.dropdown .dropdown-menu>li>a.hover,.navbar .navbar-brand.dropdown .dropdown-menu>li>a:not(.active):hover {
+    background-color: #6e6e6e;
+    -webkit-box-shadow: 0 -1px 0 #6e6e6e 0 1px 0 #6e6e6e!important;
+    box-shadow: 0 -1px 0 #6e6e6e 0 1px 0 #6e6e6e!important
+}
+
 li.palkki > a[title],  li > a[title]:not([aria-label]) {
     filter: invert(1);
 }
