@@ -17,8 +17,19 @@ body, button, label {
     color: #bbb;
 }
 
+.table>tbody>tr:nth-child(2n+1)>td,.table>tbody>tr:nth-child(2n+1)>th {
+    background-color: #000;
+    color: #fff;
+}
+
+
+
 .nav.nav-tabs.nav-tabs-primary {
     filter: contrast(0.72) invert(1) hue-rotate(290deg) !important;
+}
+
+input[type="button"].datepick-trigger {
+    background-color: #202020;
 }
 
 .recipients-selected .recipient-item {
@@ -77,6 +88,10 @@ body, button, label {
     box-shadow: 0 -1px 0 #6e6e6e 0 -1px 0 #6e6e6e
 }
 
+.login-page .alert{
+    background-color: rgb(74 30 30 / 80%) !important;
+}
+
 .nav-tabs:not(.navbar-nav)>li.tabdrop .dropdown-menu>li>a.pressed,.nav-tabs:not(.navbar-nav)>li.tabdrop .dropdown-menu>li>a:active,.nav-tabs:not(.navbar-nav)>li.tabdrop .dropdown-menu>li>a:focus {
     background: #6e6e6e;
     -webkit-box-shadow: 0 1px 0 #6e6e6e inset,0 -1px 0 #6e6e6e inset;
@@ -97,7 +112,7 @@ body, button, label {
     box-shadow: 0 -1px 0 #6e6e6e 0 1px 0 #6e6e6e!important
 }
 
-li.palkki > a[title],  li > a[title]:not([aria-label]) {
+li.palkki > a[title],  li:not([role='presentation']) > a[title]:not([aria-label]) {
     filter: invert(1);
 }
 
@@ -301,10 +316,63 @@ TR TD.at-tp-other {
     color: whitesmoke;
 }
 
+.twitter-typeahead .tt-menu .tt-dataset .tt-suggestion.tt-cursor,.twitter-typeahead .tt-menu .tt-dataset .tt-suggestion:hover {
+    background-color: #41687c;
+    color: #d6d3d3;
+}
+
 .table-hover tr.lastselected>td {
     background: #41687c !important;
     color: #d6d3d3;
 }
+
+.letter-link.selected {
+    background-color: #41687c;
+    border-radius: 4px;
+    color: white;
+    border: 1px solid #0089d9
+}
+
+.letter-link:hover {
+    background-color: #41687c;
+    color: white;
+    border-radius: 4px
+}
+
+.slider.slider-horizontal .slider-selection,.slider.slider-horizontal .slider-tick.in-selection {
+    background-color: #41687c;
+    background-image: none
+}
+
+.dropdown-menu li.active:hover {
+    background-color: #41687c;
+}
+
+.navbar .nav div.second-level-item>a.active:hover,.navbar .nav li.second-level-item>a.active:hover {
+    color: white;
+    background-color: #41687c;
+}
+
+.draggable-list .draggable-list-item.dragging {
+    background-color: #41687c;
+    z-index: 3
+}
+
+.table-hover tr.lastselected>td {
+    background: #41687c!important
+}
+
+.selection-body .list-group .list-group-item:hover>a {
+    background-color: #41687c
+}
+
+#dragtree-marker {
+    font-size: 1px;
+    position: absolute;
+    height: 2px;
+    background: #41687c
+}
+
 
 .schedule .block-area-container .schedule-container .block span.dark {
     color: #d6d3d3
@@ -367,6 +435,161 @@ nav > div.pull-right:not(.dropdown), a[title="YubiKey"] {
     color: white;
 }
 
+.nav-pills>li.active .badge,.nav-pills>li:active .badge {
+    color: #fff;
+    background: #282828;
+    -webkit-box-shadow: -1px 0 0 rgba(0,0,0,.12) inset,1px 0 0 rgba(0,0,0,.12) inset,0 1px 1px rgba(0,0,0,.1) inset,0 -1px 0 rgba(0,0,0,.25) inset;
+    box-shadow: -1px 0 0 rgba(0,0,0,.12) inset,1px 0 0 rgba(0,0,0,.12) inset,0 1px 1px rgba(0,0,0,.1) inset,0 -1px 0 rgba(0,0,0,.25) inset
+}
+
+.navbar.navbar-second-level .third-level.dropdown-menu .third-level-item>a:hover {
+    background-color: #086996
+}
+
+.table.table-hover>tbody>tr:hover>td,.table.table-hover>tbody>tr:hover>th,.table.table-hover>tfoot>tr:hover>td,.table.table-hover>tfoot>tr:hover>th,.table.table-sorter>tbody>tr:hover>td,.table.table-sorter>tbody>tr:hover>th,.table.table-sorter>tfoot>tr:hover>td,.table.table-sorter>tfoot>tr:hover>th {
+    background: #086996
+}
+
+.dropdown li>a:not(.btn):hover,.dropdown-menu>li>a:not(.btn):hover {
+    background: #086996
+}
+
+.navbar .nav .dropdown.tabdrop.open .dropdown-toggle:hover {
+    background: #086996
+}
+
+
+.navbar .nav div.second-level-item.hoverState>a:not(.dropdown-toggle),.navbar .nav li.second-level-item.hoverState>a:not(.dropdown-toggle) {
+    background: #086996;
+    text-decoration: none;
+    color: #ffffff
+}
+
+.navbar .nav .third-level.third-level-collapse>.third-level-item>a:hover {
+    background: #086996!important;
+    text-decoration: none;
+    color: #ffffff;
+    -webkit-box-shadow: 0 -1px 0 #086996 0 -1px 0 #086996;
+    box-shadow: 0 -1px 0 #086996 0 -1px 0 #086996
+}
+
+.sidenav .inner-scroll>.nav .nav>li>a:hover {
+    background-color: #086996;
+    border: 0;
+    -webkit-box-shadow: 0 1px 0 #086996 inset,0 -1px 0 #086996 inset;
+    box-shadow: 0 1px 0 #086996 inset,0 -1px 0 #086996 inset
+}
+
+.sidenav .inner-scroll>.nav.nav-one-level li:not(.active):not(.show-nav)>a:hover {
+    background-color: #086996;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.sidenav .inner-scroll>.nav.nav-one-level li:not(.active):not(.show-nav)>a:hover:before {
+    background-color: #086996;
+    top: -1px
+}
+
+.list-group>a.list-group-item:not(.disabled):hover {
+    background-color: #086996;
+    margin: 0;
+    padding-right: 18px;
+    padding-left: 18px;
+    border-bottom: 1px solid #086996;
+    color: white;
+    text-decoration: none;
+    -webkit-box-shadow: 0 -1px 0 #086996;
+    box-shadow: 0 -1px 0 #086996
+}
+
+.panel-group>.panel>.panel-heading>.panel-title>a:first-child:hover {
+    background-color: #086996;
+    position: relative;
+    margin: 0;
+    padding: 12px 20px;
+    border-top-color: #086996;
+    border-bottom-color: transparent;
+    -webkit-box-shadow: 0 1px 0 #086996;
+    box-shadow: 0 1px 0 #086996
+}
+
+.panel-group>.panel>.panel-collapse .panel-body>.panel>.panel-heading>.panel-title>a:first-child:hover {
+    background-color: #086996;
+    border-bottom: 1px solid #086996;
+    color: whitesmoke;
+}
+
+.panel-group>.panel>.panel-collapse .panel-body>.panel>.panel-heading>.panel-title>a:first-child:hover+.anchorjs-link:after {
+    bottom: -3px;
+    border-color: #086996 transparent transparent
+}
+
+.panel-group>.panel>.panel-collapse .panel-body>.panel>.panel-heading>.panel-title>a.collapsed:hover {
+    background-color: #086996
+}
+
+.panel-group>.panel .panel-collapse.in .panel-heading:hover+.panel-collapse.in::after,.panel-group>.panel .panel-collapse.in .panel-heading:hover+.panel-collapse.in::before {
+    background-color: #086996
+}
+
+.panel-group.list-group>.panel>.panel-heading>.panel-title>a:first-child:hover {
+    color: white;
+    margin: 0 0;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-color: #086996 transparent transparent;
+    background-color: #086996;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.panel-group.list-group .panel-collapse>.list-group>.list-group-item:hover {
+    cursor: pointer;
+    color: white;
+    background-color: #086996;
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 30px;
+    padding-right: 18px;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
+
+.login-page .alert.login-footer-alert .dropdown-menu>li>a.active:hover {
+    background-color: #086996
+}
+
+.navbar .nav div.second-level-item>a:hover,.navbar .nav li.second-level-item>a:hover {
+    background: #086996!important;
+    text-decoration: none;
+    color: #ffffff;
+    -webkit-box-shadow: 0 -1px 0 #086996 0 -1px 0 #086996;
+    box-shadow: 0 -1px 0 086996 0 -1px 0 086996
+}
+
+.navbar .navbar-brand.dropdown .dropdown-menu>li>a.hover,.navbar .navbar-brand.dropdown .dropdown-menu>li>a:not(.active):hover {
+    background-color: #086996;
+    -webkit-box-shadow: 0 -1px 0 #086996 0 1px 0 #086996!important;
+    box-shadow: 0 -1px 0 #086996 0 1px 0 #086996!important
+}
+
+.navbar .nav>div.dropdown .dropdown-menu>div>a:not(.btn):hover,.navbar .nav>div.dropdown .dropdown-menu>li>a:not(.btn):hover,.navbar .nav>li.dropdown .dropdown-menu>div>a:not(.btn):hover,.navbar .nav>li.dropdown .dropdown-menu>li>a:not(.btn):hover {
+    background-color: #086996
+}
+
+.navbar.navbar-second-level .third-level.dropdown-menu .third-level-item>a:hover {
+    background-color: #086996
+}
+
+
+.nav-tabs:not(.navbar-nav)>li.tabdrop .dropdown-menu>li>a:hover {
+    border: 0;
+    background: #086996;
+    color: white;
+    -webkit-box-shadow: none;
+    box-shadow: none
+}
 
 
 .nav-pills>li.active>a,.nav-pills>li.dropdown.open>a {
@@ -443,6 +666,14 @@ nav > div.pull-right:not(.dropdown), a[title="YubiKey"] {
     background-color: #000;
 }
 
+.formative-grading .row.odd {
+    background-color: #808080
+}
+
+.presence-choices-table tr.odd {
+    background-color: #808080
+}
+
 .schedule.schedule-old tbody td.event.highlight {
     background-color: #0276b1
 }
@@ -470,6 +701,72 @@ nav > div.pull-right:not(.dropdown), a[title="YubiKey"] {
     color: #e0e0e0;
 }
 
+.table.table-hover>tbody>tr:hover>td,.table.table-hover>tbody>tr:hover>th,.table.table-hover>tfoot>tr:hover>td,.table.table-hover>tfoot>tr:hover>th,.table.table-sorter>tbody>tr:hover>td,.table.table-sorter>tbody>tr:hover>th,.table.table-sorter>tfoot>tr:hover>td,.table.table-sorter>tfoot>tr:hover>th {
+    background: #105279;
+    color: whitesmoke;
+}
+
+.table.table-active>thead>tr>td:hover,.table.table-hover>thead>tr>td:hover,.table.table-sorter>thead>tr>td:hover,.table.table-sorter>thead>tr>th:hover {
+    cursor: pointer;
+    color: white;
+    background: #116191;
+    background: -webkit-linear-gradient(top,#116191 10%,#116191 75%);
+    background: linear-gradient(to bottom,#116191 10%,#116191 75%);
+}
+
+.table.table-active>tbody>tr.active>td,.table.table-active>tbody>tr.active>th,.table.table-active>tbody>tr.pressed>td,.table.table-active>tbody>tr.pressed>th,.table.table-active>tfoot>tr.active>td,.table.table-active>tfoot>tr.active>th,.table.table-active>tfoot>tr.pressed>td,.table.table-active>tfoot>tr.pressed>th,.table.table-sorter>tbody>tr.active>td,.table.table-sorter>tbody>tr.active>th,.table.table-sorter>tbody>tr.pressed>td,.table.table-sorter>tbody>tr.pressed>th,.table.table-sorter>tfoot>tr.active>td,.table.table-sorter>tfoot>tr.active>th,.table.table-sorter>tfoot>tr.pressed>td,.table.table-sorter>tfoot>tr.pressed>th,.table>tbody>tr.active>td,.table>tbody>tr.active>th,.table>tbody>tr>td.active,.table>tbody>tr>th.active,.table>tfoot>tr.active>td,.table>tfoot>tr.active>th,.table>tfoot>tr>td.active,.table>tfoot>tr>th.active {
+    background: #116191;
+    color: white;
+    -webkit-box-shadow: 0 1px 0 #116191 inset,0 -1px 0 #116191 inset;
+    box-shadow: 0 1px 0 #116191 inset,0 -1px 0 #116191 inset
+}
+
+.table.table-active:not(.table-grey)>tbody>tr.active>td:first-child:before,.table.table-active:not(.table-grey)>tbody>tr.active>th:first-child:before,.table.table-active:not(.table-grey)>tfoot>tr.active>td:first-child:before,.table.table-active:not(.table-grey)>tfoot>tr.active>th:first-child:before,.table.table-sorter:not(.table-grey)>tbody>tr.active>td:first-child:before,.table.table-sorter:not(.table-grey)>tbody>tr.active>th:first-child:before,.table.table-sorter:not(.table-grey)>tfoot>tr.active>td:first-child:before,.table.table-sorter:not(.table-grey)>tfoot>tr.active>th:first-child:before,.table:not(.table-grey)>tbody>tr.active>td:first-child:before,.table:not(.table-grey)>tbody>tr.active>th:first-child:before,.table:not(.table-grey)>tfoot>tr.active>td:first-child:before,.table:not(.table-grey)>tfoot>tr.active>th:first-child:before {
+    color: white;
+}
+
+.table.table-active:not(.table-grey)>tbody>tr:active>td:first-child:before,.table.table-active:not(.table-grey)>tbody>tr:active>th:first-child:before,.table.table-active:not(.table-grey)>tbody>tr>td.active:before,.table.table-active:not(.table-grey)>tbody>tr>th.active:before,.table.table-active:not(.table-grey)>tfoot>tr:active>td:first-child:before,.table.table-active:not(.table-grey)>tfoot>tr:active>th:first-child:before,.table.table-active:not(.table-grey)>tfoot>tr>td.active:before,.table.table-active:not(.table-grey)>tfoot>tr>th.active:before,.table.table-sorter:not(.table-grey)>tbody>tr:active>td:first-child:before,.table.table-sorter:not(.table-grey)>tbody>tr:active>th:first-child:before,.table.table-sorter:not(.table-grey)>tbody>tr>td.active:before,.table.table-sorter:not(.table-grey)>tbody>tr>th.active:before,.table.table-sorter:not(.table-grey)>tfoot>tr:active>td:first-child:before,.table.table-sorter:not(.table-grey)>tfoot>tr:active>th:first-child:before,.table.table-sorter:not(.table-grey)>tfoot>tr>td.active:before,.table.table-sorter:not(.table-grey)>tfoot>tr>th.active:before,.table:not(.table-grey)>tbody>tr>td.active:before,.table:not(.table-grey)>tbody>tr>th.active:before,.table:not(.table-grey)>tfoot>tr>td.active:before,.table:not(.table-grey)>tfoot>tr>th.active:before {
+    color: white;
+}
+
+.table.table-active>thead>tr>td.pressed,.table.table-active>thead>tr>td.pressed:hover,.table.table-sorter>thead>tr>td.pressed,.table.table-sorter>thead>tr>td.pressed:hover,.table.table-sorter>thead>tr>th.pressed,.table.table-sorter>thead>tr>th.pressed:hover {
+    background: #053767;
+    color: whitesmoke;
+}
+
+.table.table-grey tbody {
+    background: #3e3e3e;
+    color: white;
+}
+
+
+.table.table-grey>tbody>tr:nth-child(2n+1)>td,.table.table-grey>tbody>tr:nth-child(2n+1)>th {
+    background-color: #3b3b3b;
+    color: white;
+}
+
+.table.table-grey.table-hover>thead>tr>td:hover,.table.table-grey.table-sorter>thead>tr>td:hover,.table.table-grey.table-sorter>thead>tr>th:hover {
+    cursor: pointer;
+    background: #3e3e3e;
+    background: -webkit-linear-gradient(top,#3e3e3e 10%,#3e3e3e 75%);
+    background: linear-gradient(to bottom,#3e3e3e 10%,#3e3e3e 75%)
+}
+
+.table.table-grey.table-active>thead>tr>td.pressed,.table.table-grey>thead>tr>td.pressed {
+    background: #053767;
+    color: whitesmoke;
+}
+
+.table.disabled>tbody {
+    background: black;
+    color: white;
+}
+
+.table.disabled>tbody>tr:nth-child(2n+1)>td,.table.disabled>tbody>tr:nth-child(2n+1)>th {
+    background: #3b3b3b;
+}
+
+
 .nav-pills>li>a {
     border-color: #353535 #353535 #212121;
     background: #353535;
@@ -477,8 +774,17 @@ nav > div.pull-right:not(.dropdown), a[title="YubiKey"] {
     background: linear-gradient(to bottom,#353535 10%,#212121 75%);
 }
 
+.table.table-grey.table-active>thead>tr>td.active,.table.table-grey.table-active>thead>tr>th.active,.table.table-grey.table-hover>thead>tr>td:hover,.table.table-grey.table-hover>thead>tr>th:hover,.table.table-grey.table-sorter>thead>tr>td:hover,.table.table-grey.table-sorter>thead>tr>th:hover,.table.table-grey>thead>tr>th {
+    color: #197eba;
+    background: #000000
+}
+
 .navbar .nav>div.dropdown.open .dropdown-toggle, .navbar .nav>li.dropdown.open .dropdown-toggle {
     color: white;
+}
+
+.table.table-grey.table-hover>tbody>tr:hover>td,.table.table-grey.table-hover>tbody>tr:hover>th,.table.table-grey.table-hover>tfoot>tr:hover>td,.table.table-grey.table-hover>tfoot>tr:hover>th,.table.table-grey.table-sorter>tbody>tr:hover>td,.table.table-grey.table-sorter>tbody>tr:hover>th,.table.table-grey.table-sorter>tfoot>tr:hover>td,.table.table-grey.table-sorter>tfoot>tr:hover>th {
+    background-color: #197eba
 }
 
 .nav-pills>li.active>a, .nav-pills>li.dropdown.open>a {
@@ -540,6 +846,12 @@ nav > div.pull-right:not(.dropdown), a[title="YubiKey"] {
 
 .reservation-event strong {
     /*color: #ccc;*/
+}
+
+.navbar .nav .dropdown.tabdrop .dropdown-menu>li.active>a:hover {
+    background: #41687c;
+    -webkit-box-shadow: 0 -1px 0 #41687c;
+    box-shadow: 0 -1px 0 #41687c
 }
 
 table.vismaDatePickerCalendar tbody td a,

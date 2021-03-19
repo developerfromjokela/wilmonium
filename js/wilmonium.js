@@ -1,7 +1,7 @@
 /*
  Config and misc tools
  */
-const debug = true;
+const debug = false;
 
 const wilmoniumDebug = (msg) => {
     if (debug)
