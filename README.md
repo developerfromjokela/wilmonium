@@ -28,4 +28,4 @@ Currently the following pages are styled properly:
 - [ ] ... other pages in the dropdown menu
 - [x] dropdown and popup elements
 
-I am also planning to add light/dark mode switch and reduce theme flickering on page change.
+I am also planning to reduce theme flickering on page loading.
