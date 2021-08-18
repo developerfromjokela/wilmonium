@@ -4,7 +4,6 @@ document.querySelector('.toggle-checkbox').onchange = (evt) => {
         console.log("set");
         chrome.tabs.query({currentWindow: true}, function(tabs) {
             tabs.forEach(function (tab) {
-                console.log(tab.id);
                 chrome.tabs.sendMessage(tab.id, {action: 'themeChanged'});
             });
         });

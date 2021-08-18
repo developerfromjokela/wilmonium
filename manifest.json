@@ -17,8 +17,7 @@
     "default_popup": "control/control.html"
   },
   "permissions": [
-    "storage",
-    "tabs"
+    "storage"
   ],
   "content_scripts": [
     {

@@ -1,4 +1,4 @@
-const debug = true;
+const debug = false;
 
 const wilmoniumDebug = (msg) => {
     if (debug)
@@ -48,7 +48,7 @@ const iframePatch = () => {
 };
 
 try {
-    let navDetect = document.getElementsByClassName("nav-wilma").length > 0 || document.getElementsByClassName("login-page").length > 0;
+    let navDetect = document.getElementsByClassName("nav-wilma").length > 0 || document.getElementsByClassName("nobody login-page").length > 0;
     let selectionDetect = document.getElementsByClassName("selection-body").length > 0;
     // Inject code to wilma page, if it happens to be logged in
     if ( navDetect || selectionDetect) {

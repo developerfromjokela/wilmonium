@@ -1,7 +1,7 @@
 /*
  Config and misc tools
  */
-const debug = false;
+const debug = true;
 
 const wilmoniumDebug = (msg) => {
     if (debug)
@@ -17,8 +17,9 @@ function refreshSession() {
         response.json().then(res => {
             wilmoniumDebug(JSON.stringify(res));
             if (res.LoginResult) {
-                // Fuck, wilma logged itself out ¯\_(ツ)_/¯
+                // Sh*t, wilma logged itself out ¯\_(ツ)_/¯
                 wilmoniumDebug("Wilma logged out, refreshing...");
+
                 window.location.reload();
             } else {
                 wilmoniumDebug("Setting AutoLogoutWarning.tMinusLogout to "+window.autoLogoutDelay);
